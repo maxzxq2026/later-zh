@@ -1,46 +1,69 @@
-# Later
+# Later 中文版 🖱️
 
+一键保存所有 Mac 窗口状态，稍后一键恢复。
 
+<p align="center">
+  <em>下班前保存工作状态，第二天一键恢复</em>
+</p>
 
-https://user-images.githubusercontent.com/7581348/176900722-6ceb1fb7-b235-4a6a-991c-6273edc31b30.mp4
+## ✨ 功能
 
+- 🖱️ **一键保存** — 保存当前所有打开的应用窗口
+- 🔄 **一键恢复** — 稍后一键恢复所有窗口
+- ⏰ **定时恢复** — 设置 15 分钟/30 分钟/1 小时/5 小时后自动恢复
+- 📸 **截图预览** — 保存时自动截图，方便回忆
+- ⚙️ **灵活配置** — 可选择隐藏或关闭应用、忽略系统窗口等
+- ⌨️ **快捷键** — ⌘⇧L 保存，⌘⇧R 恢复
 
-Save all your Mac apps for later with one click 🖱️
+## 🎯 使用场景
 
-Later is a Mac menu bar app that clears and restores your workspace with ease. Switch off from work, tidy up your desktop before screen sharing, schedule apps for later, and more.
+1. **下班保存** — 保存所有工作窗口，第二天一键恢复
+2. **会议切换** — 保存当前工作，切换到会议相关窗口
+3. **专注模式** — 保存所有窗口，只保留当前任务
+4. **重启恢复** — 系统重启后快速恢复工作环境
 
+## 📦 安装
 
-<a href="https://www.producthunt.com/posts/later-aa762753-cafe-475e-9acb-d534de9e6adf?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-later&#0045;aa762753&#0045;cafe&#0045;475e&#0045;9acb&#0045;d534de9e6adf" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=332569&theme=light" alt="Later - Save&#0032;all&#0032;your&#0032;Mac&#0032;apps&#0032;for&#0032;later&#0032;with&#0032;one&#0032;click | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+### 方式一：下载 DMG
+从 [Releases](https://github.com/maxzxq2026/later-zh/releases) 下载 `Later.dmg`，拖入 Applications 文件夹。
 
-> You can support this project (and many others) through [GitHub Sponsors](https://github.com/sponsors/alyssaxuu)! ❤️
+### 方式二：从源码构建
+```bash
+git clone https://github.com/maxzxq2026/later-zh.git
+cd later-zh/xcode
+open Later.xcworkspace
+```
+在 Xcode 中构建并运行。
 
-Made by [Alyssa X](https://twitter.com/alyssaxuu)
+## ⚙️ 设置选项
 
-Note: I am not maintaining this project any longer, I have open sourced it so anyone can make changes and improvements, or build their own version of it.
+| 选项 | 说明 |
+|------|------|
+| 登录时启动 | 开机自动启动 Later |
+| 忽略系统窗口 | 保存时忽略 Finder、系统设置等 |
+| 恢复时关闭应用 | 恢复前先关闭所有应用 |
+| 保持窗口打开 | 保存时只隐藏不关闭应用 |
+| 定时恢复 | 设置自动恢复时间 |
 
-## Table of contents
+## ⌨️ 快捷键
 
-- [Features](#features)
-- [Installing Later](#installing-later)
-- [Source code](#source-code)
+| 快捷键 | 功能 |
+|--------|------|
+| ⌘⇧L | 保存当前窗口 |
+| ⌘⇧R | 恢复保存的窗口 |
 
-## Features
+## 🔒 隐私
 
-👻 Hide or close all your apps<br> ⚡️ Restore your session with just one click<br> 👀 View metadata and a preview of your saved sessions<br> ⏱ Schedule apps to reopen after some time to get back in the flow<br> 🔋 Save battery by closing your apps instead of leaving them open<br> ⌨️ Keyboard shortcuts to save and restore your session<br> ⚙️ Advanced settings to ignore apps, terminate instead of hiding, etc.
+- 截图仅保存在本地 `~/Documents/screenshot.jpg`
+- 不联网，不上传任何数据
+- 所有设置存储在本地 UserDefaults
 
-## Installing Later
-You can install Later on macOS 11.6 or later.
-1. [Click here](https://github.com/alyssaxuu/later/raw/master/Later.dmg) to download the latest version. You can also download the [Later.dmg](https://github.com/alyssaxuu/later/blob/master/Later.dmg) file from this repo.
-2.  Drag the Later app into the Applications folder.
-3.  Right click while holding the Control key on the Later app, and select "Open" from the context menu.
-4. You will be prompted with an alert saying that the app can't be opened because Apple cannot check it for malicious software (it's not signed). You can open it anyway by clicking "Open".
-5. Later will open as an item on your menu bar.
+## 🙏 致谢
 
-You can read the [FAQ](https://necessary-duke-5f6.notion.site/FAQ-c1a7231ecf34441e9d3d6944199e4705) if you have any questions.
+原项目：[alyssaxuu/later](https://github.com/alyssaxuu/later)
 
-## Source code
-You can open Later in Xcode if you'd like to make any changes, or develop it further.
-1. Download the [Xcode folder](https://github.com/alyssaxuu/later/tree/master/xcode) in the repo.
-2. Open Xcode, and choose the option to "Open a project or file"
-3. Select the Xcode folder you downloaded
-4. You might be prompted with a warning, select "Trust and open" to proceed.
+本项目为原版的中文翻译版本，保留所有原始功能。
+
+## 📄 许可证
+
+与原项目相同，详见 [LICENSE](LICENSE)。
